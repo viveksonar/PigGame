@@ -17,7 +17,6 @@ document.querySelector('.btn-roll').addEventListener('click',function(){
     }
   }
 } )
-
 document.querySelector('.btn-hold').addEventListener('click',function(){
   if (gameRunning) {
   scores[activePlayer]+=roundScore;
@@ -34,8 +33,6 @@ document.querySelector('.btn-hold').addEventListener('click',function(){
   }
 }
 })
-
-document.querySelector('.final-score').textContent = scores[activePlayer];
 
 function nextPlayer(){
   activePlayer===0 ? activePlayer=1 : activePlayer=0;
